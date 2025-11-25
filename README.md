@@ -1,11 +1,11 @@
 Java Web-Based Quiz Platform
 
-  A full-featured Java web application built using Servlets, JSP, JDBC (MySQL), and MVC architecture.
-  
-  The system supports Admin, Creator, and Participant roles with complete quiz lifecycle management.
+A full-featured Java web application built using Servlets, JSP, JDBC (MySQL), and MVC architecture.
 
-  Features
-  
+The system supports Admin, Creator, and Participant roles with complete quiz lifecycle management.
+
+Features
+
 👤 User Management
 
 Secure login using BCrypt-hashed passwords
@@ -72,45 +72,45 @@ quiz-platform/
 
 ├─ src/
 
-│  ├─ main/
+│ ├─ main/
 
-│  │  ├─ java/com/quizapp/
+│ │ ├─ java/com/quizapp/
 
-│  │  │  ├─ dao/ (DBConnection, UserDAO, QuizDAO, QuestionDAO, AttemptDAO, AnswerDAO)
+│ │ │ ├─ dao/ (DBConnection, UserDAO, QuizDAO, QuestionDAO, AttemptDAO, AnswerDAO)
 
-│  │  │  ├─ model/ (User, Quiz, Question, Attempt, Answer)
+│ │ │ ├─ model/ (User, Quiz, Question, Attempt, Answer)
 
-│  │  │  ├─ servlet/ (AuthServlet, AdminServlet, QuizServlet, CreatorServlet, ReportServlet)
+│ │ │ ├─ servlet/ (AuthServlet, AdminServlet, QuizServlet, CreatorServlet, ReportServlet)
 
-│  │  │  ├─ filter/ (AuthFilter, optional RoleFilter/CSRF)
+│ │ │ ├─ filter/ (AuthFilter, optional RoleFilter/CSRF)
 
-│  │  │  └─ util/ (PasswordUtil, other helpers)
+│ │ │ └─ util/ (PasswordUtil, other helpers)
 
-│  │  ├─ webapp/
+│ │ ├─ webapp/
 
-│  │  │  ├─ WEB-INF/
+│ │ │ ├─ WEB-INF/
 
-│  │  │  │  ├─ web.xml
+│ │ │ │ ├─ web.xml
 
-│  │  │  │  └─ jsp/
+│ │ │ │ └─ jsp/
 
-│  │  │  │     ├─ admin/dashboard.jsp
+│ │ │ │ ├─ admin/dashboard.jsp
 
-│  │  │  │     ├─ admin/pending.jsp
+│ │ │ │ ├─ admin/pending.jsp
 
-│  │  │  │     └─ admin/users.jsp
+│ │ │ │ └─ admin/users.jsp
 
-│  │  │  ├─ index.jsp
+│ │ │ ├─ index.jsp
 
-│  │  │  ├─ login.jsp
+│ │ │ ├─ login.jsp
 
-│  │  │  ├─ quizzes.jsp
+│ │ │ ├─ quizzes.jsp
 
-│  │  │  ├─ take_quiz_timed.jsp
+│ │ │ ├─ take_quiz_timed.jsp
 
-│  │  │  └─ quiz_result.jsp
+│ │ │ └─ quiz_result.jsp
 
-│  └─ test/ (unit / integration tests)
+│ └─ test/ (unit / integration tests)
 
 └─ README.md
 
@@ -146,7 +146,6 @@ Maven
 
 WAR Packaging
 
-
 ⚙️ How to Run the Project
 
 1️⃣ Clone the repository: https://github.com/CodeConstructors1/Java-Online-Quiz-Platform.git
@@ -159,7 +158,7 @@ user=root
 
 password=
 
-3️⃣ Build project:   mvn clean package
+3️⃣ Build project: mvn clean package
 
 4️⃣ Deploy WAR file:
 
@@ -172,6 +171,3 @@ Jetty
 Any Java EE servlet container
 
 5️⃣ Access application: http://localhost:8080/quiz-platform-full/
-
-
-
